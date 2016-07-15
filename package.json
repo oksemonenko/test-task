@@ -1,0 +1,40 @@
+{
+  "name": "test-task",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тестовое задание компании GreenLabs",
+  "author": "Оксана Семоненко",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oksemonenko/test-task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oksemonenko/test-task/issues"
+  },
+  "homepage": "https://github.com/oksemonenko/test-task",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "browser-sync": "2.12.10",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.1",
+    "editorconfig-tools": "0.1.1",
+    "gulp": "3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "2.3.1",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "run-sequence": "^1.2.1"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "5.11"
+  }
+}
