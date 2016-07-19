@@ -1,0 +1,5 @@
+.hidden {
+  @media #{$tablet-width} {
+    display: none;
+  }
+}
