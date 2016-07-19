@@ -1,0 +1,78 @@
+.icons {
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+.icons__title {
+  margin-bottom: 15px;
+  font-size: $font-size-h3;
+  color: #292929;
+}
+
+.icons__link {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: 1.5;
+  color: $color-text;
+  text-decoration: none;
+  vertical-align: top;
+
+  &:hover .icon-svg {
+    fill: $color-black;
+  }
+
+  &:hover .icon-sprite {
+    background-color: $color-text;
+    opacity: 1;
+
+    &--vk {
+      background-position: -148px 3px;
+    }
+
+    &--fb {
+      background-position: 5px 0;
+    }
+
+    &--inst {
+      background-position: -62px 0;
+    }
+  }
+
+  &--svg {
+    position: relative;
+    padding-left: 30px;
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+
+  &--svg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.5;
+  }
+
+  &--heart:before {
+    background-image: url("../img/icons/icon-heart.svg");
+  }
+
+  &--phone:before {
+    background-image: url("../img/icons/icon-phone.svg");
+  }
+
+  &--mail:before {
+    background-image: url("../img/icons/icon-mail.svg");
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+}

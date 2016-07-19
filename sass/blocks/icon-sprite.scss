@@ -1,0 +1,26 @@
+.icon-sprite {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: -10px 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: url("../img/sprite.png") no-repeat center;
+  opacity: 0.5;
+  transition:
+          background-position 0.5s,
+          background-color 0.5s;
+
+  &--vk {
+    background-position: -193px 3px;
+  }
+
+  &--fb {
+    background-position: -26px 0px;
+  }
+
+  &--inst {
+    background-position: -103px 0;
+  }
+}
+

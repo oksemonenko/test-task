@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "symbols";
 
 @import "scaffolding";
 
@@ -7,3 +8,13 @@
 @import "blocks/news";
 @import "blocks/news-item";
 @import "blocks/btn";
+@import "blocks/modal-content";
+@import "blocks/modal-overlay";
+@import "blocks/form";
+@import "blocks/title";
+@import "blocks/container";
+@import "blocks/icons";
+@import "blocks/icon";
+@import "blocks/icon-sprite";
+@import "blocks/icon-svg";
+@import "blocks/icons-block";
