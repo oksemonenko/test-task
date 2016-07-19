@@ -7,7 +7,21 @@
   <link href="https://fonts.googleapis.com/css?family=Arimo&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <section class="news-block  container">
+  <section class="common  container" id="common">
+    <h1 class="common__title  title  title--h1">Общие требования</h1>
+  </section>
+  <nav class="main-nav  container  container--side" id="navigation">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a class="main-nav__url" href="#common">Общие требования</a></li>
+      <li class="main-nav__item"><a class="main-nav__url" href="#news">Часть 1: список новостей</a></li>
+      <li class="main-nav__item"><a class="main-nav__url" href="#feedback">Часть 2: форма</a></li>
+      <li class="main-nav__item"><a class="main-nav__url" href="#icons">Часть 3: блок с иконками</a></li>
+      <li class="main-nav__item"><a class="main-nav__url" href="#navigation">Часть 4: блок навигации</a></li>
+      <li class="main-nav__item"><a class="main-nav__url" href="#adaptive">Часть 5: адаптация под устройства</a></li>
+      <li class="main-nav__item"><a class="main-nav__url" href="#optimization">Часть 6: оптимизация</a></li>
+    </ul>
+  </nav>
+  <section class="news-block  container" id="news">
     <div class="news">
       <h2 class="news__title  title">Новости</h2>
       <div class="news-item">
@@ -78,11 +92,11 @@
     </div>
     <a class="news-btn  btn" href="#">Показать еще</a>
   </section>
-  <!--<section class="feedback  container">-->
+  <!--<section class="feedback  container" id="feedback">-->
     <!--<h2 class="feedback__title  title">Форма обратной связи</h2>-->
     <!--<a class="feedback__btn  btn" href="#">Обратная связь</a>-->
   <!--</section>-->
-  <section class="icons-block  container">
+  <section class="icons-block  container" id="icons">
     <h2 class="icons-block__title  title">Блок иконок</h2>
     <div class="icons">
       <h3 class="icons__title">Иконочный шрифт</h3>
@@ -147,6 +161,12 @@
       <a class="icons__link  icons__link--svg  icons__link--phone" href="#">Звоните</a>
       <a class="icons__link  icons__link--svg  icons__link--mail" href="#">Пишите</a>
     </div>
+  </section>
+  <section class="adaptive  container" id="adaptive">
+    <h2 class="adaptive__title  title">Адаптация под устройства</h2>
+  </section>
+  <section class="optimization  container" id="optimization">
+    <h2 class="optimization__title  title">Оптимизация</h2>
   </section>
   <!--<div class="modal-content">-->
     <!--<button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>-->

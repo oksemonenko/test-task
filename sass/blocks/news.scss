@@ -4,17 +4,14 @@
   top: 50%;
   left: 50%;
   z-index: 2;
-
   box-sizing: border-box;
   width: 200px;
   margin-left: -100px;
   padding: 20px;
-
   font-size: 30px;
   text-align: center;
-  color: #ffffff;
-
-  background: rgba(0, 0, 0, 0.7);
+  color: $color-white;
+  background: $color-transparent;
   border-radius: 10px;
 }
 
