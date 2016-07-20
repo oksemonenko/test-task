@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Test Task</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arimo&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
@@ -102,15 +103,19 @@
       <h2 class="icons-block__title  title">Блок иконок</h2>
       <div class="icons">
         <h3 class="icons__title">Иконочный шрифт</h3>
-        <a class="icon-facebook  icon" href="#"><span class="icons__text">Facebook</span></a>
-        <a class="icon-twitter  icon" href="#"><span class="icons__text">Twitter</span></a>
-        <a class="icon-youtube  icon" href="#"><span class="icons__text">YouTube</span></a>
+        <div class="icons__content">
+          <a class="icon-facebook  icon" href="#"><span class="icons__text">Facebook</span></a>
+          <a class="icon-twitter  icon" href="#"><span class="icons__text">Twitter</span></a>
+          <a class="icon-youtube  icon" href="#"><span class="icons__text">YouTube</span></a>
+        </div>
       </div>
       <div class="icons">
         <h3 class="icons__title">Растровый спрайт</h3>
-        <a class="icons__link" href="#"><span class="icon-sprite  icon-sprite--vk"></span>Вконтакте</a>
-        <a class="icons__link" href="#"><span class="icon-sprite  icon-sprite--fb"></span>Фейсбук</a>
-        <a class="icons__link" href="#"><span class="icon-sprite  icon-sprite--inst"></span>Инстаграм</a>
+        <div class="icons__content">
+          <a class="icons__link" href="#"><span class="icon-sprite  icon-sprite--vk"></span>Вконтакте</a>
+          <a class="icons__link" href="#"><span class="icon-sprite  icon-sprite--fb"></span>Фейсбук</a>
+          <a class="icons__link" href="#"><span class="icon-sprite  icon-sprite--inst"></span>Инстаграм</a>
+        </div>
       </div>
       <div class="icons">
         <h3 class="icons__title">SVG-спрайт</h3>
@@ -141,27 +146,31 @@
               1.64-1.643v-1.646c0-.576-.236-1.094-.618-1.47L13.13 6.975V5.951a1.025 1.025 0 1 0-2.051
               0v1.024H8.616zm1.232 2.053c1.814 0 3.282 1.468 3.282 3.282s-1.468 3.282-3.282 3.282c-1.813
               0-3.281-1.468-3.281-3.282s1.467-3.282 3.281-3.282z"/></symbol></svg>
-        <a class="icons__link" href="#">
-        <svg class="icon-svg  icon-svg--heart" width="20" height="20">
-          <use xlink:href="#icon-heart"/>
-        </svg>
-        Ставьте лайк</a>
-        <a class="icons__link" href="#">
-        <svg class="icon-svg  icon-svg--phone" width="20" height="20">
-          <use xlink:href="#icon-phone"/>
-        </svg>
-        Звоните</a>
-        <a class="icons__link" href="#">
-        <svg class="icon-svg  icon-svg--mail" width="20" height="20">
-          <use xlink:href="#icon-mail"/>
-        </svg>
-        Пишите</a>
+        <div class="icons__content">
+          <a class="icons__link" href="#">
+            <svg class="icon-svg  icon-svg--heart" width="20" height="20">
+              <use xlink:href="#icon-heart"/>
+            </svg>
+            Ставьте лайк</a>
+          <a class="icons__link" href="#">
+            <svg class="icon-svg  icon-svg--phone" width="20" height="20">
+              <use xlink:href="#icon-phone"/>
+            </svg>
+            Звоните</a>
+          <a class="icons__link" href="#">
+            <svg class="icon-svg  icon-svg--mail" width="20" height="20">
+              <use xlink:href="#icon-mail"/>
+            </svg>
+            Пишите</a>
+        </div>
       </div>
       <div class="icons">
         <h3 class="icons__title">Псевдоэлементы SVG</h3>
-        <a class="icons__link  icons__link--svg  icons__link--heart" href="#">Ставьте лайк</a>
-        <a class="icons__link  icons__link--svg  icons__link--phone" href="#">Звоните</a>
-        <a class="icons__link  icons__link--svg  icons__link--mail" href="#">Пишите</a>
+        <div class="icons__content">
+          <a class="icons__link  icons__link--svg  icons__link--heart" href="#">Ставьте лайк</a>
+          <a class="icons__link  icons__link--svg  icons__link--phone" href="#">Звоните</a>
+          <a class="icons__link  icons__link--svg  icons__link--mail" href="#">Пишите</a>
+        </div>
       </div>
     </section>
     <section class="adaptive  container" id="adaptive">

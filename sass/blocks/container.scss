@@ -12,7 +12,7 @@
     @media #{$mobile-width} {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $color-gray;
+      background-color: transparent;
       box-shadow: none;
     }
   }

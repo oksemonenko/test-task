@@ -5,6 +5,10 @@
   line-height: 1.5;
   color: $color-text;
   text-decoration: none;
+
+  @media #{$mobile-width} {
+    margin-bottom: 15px;
+  }
 }
 
 .icons__text {

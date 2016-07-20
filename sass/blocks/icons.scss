@@ -9,6 +9,14 @@
   color: #292929;
 }
 
+.icons__content {
+  @media #{$mobile-width} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .icons__link {
   display: inline-block;
   margin-right: 20px;
@@ -18,6 +26,10 @@
   color: $color-text;
   text-decoration: none;
   vertical-align: top;
+
+  @media #{$mobile-width} {
+    margin-bottom: 25px;
+  }
 
   &:hover .icon-svg {
     fill: $color-black;
