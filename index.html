@@ -11,6 +11,10 @@
   <div class="wrapper">
     <section class="common  container" id="common">
       <h1 class="common__title  title  title--h1">Общие требования</h1>
+      <p class="text">Тестовое задание (ТЗ) состоит из нескольких частей. После выполнения каждой части необходимо фиксировать
+        изменения коммитом на гитхабе. В верстке необходимо использовать один из CSS-препроцессоров
+        (Sass, Less, Stylus или др.) и удобный вам инструмент для сборки проекта. Если в задании не указано как должен
+        выглядеть блок, нужно постараться стилизовать его в стиле ТЗ, пиксельной точности не требуется</p>
     </section>
     <nav class="main-nav  main-nav--closed  container  container--side" id="navigation">
       <button class="main-nav__toggle" type="button"></button>
@@ -27,6 +31,8 @@
     <section class="news-block  container" id="news">
       <div class="news">
         <h2 class="news__title  title">Новости</h2>
+        <p class="text">На странице отображается 5 новостей. В конце списка отображается кнопка "показать еще",
+          при нажатии на которую в конец списка подгружается еще 5 новостей.</p>
         <div class="news-item">
           <a class="news-item__url" href="#">
             <img class="news-item__image" src="img/news-image.png" width="205" height="146" alt="News Preview">
@@ -97,6 +103,7 @@
     </section>
     <section class="feedback  container" id="feedback">
       <h2 class="feedback__title  title">Форма обратной связи</h2>
+      <p class="text">При нажатии на кнопку "Обратная связь" необходимо открывать всплывающее окно с формой (Ajax).</p>
       <a class="feedback__btn  btn" href="#">Обратная связь</a>
     </section>
     <section class="icons-block  container" id="icons">
@@ -175,24 +182,49 @@
     </section>
     <section class="adaptive  container" id="adaptive">
       <h2 class="adaptive__title  title">Адаптация под устройства</h2>
+      <p class="text">Реализовать адаптацию ТЗ под планшеты и мобильные устройства</p>
     </section>
     <section class="optimization  container" id="optimization">
       <h2 class="optimization__title  title">Оптимизация</h2>
+      <p class="text">Пройдитесь по коду, подумайте как можно его оптимизировать.
+        Оптимизируйте изображения, минимизируйте CSS, JS.</p>
     </section>
     <div class="modal-content">
       <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
       <h2 class="modal-content__title">Обратная связь</h2>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form">
         <label class="form__label" for="form__text">Ваше ФИО</label>
-        <input class="form__input  form__text" id="form__text" type="text" name="text" placeholder="ФИО" required>
+        <input class="form__input  form__text" id="form__text" type="text" name="text"
+               placeholder="Иванов Иван Иванович"
+               value="Иванов Иван Иванович"
+               pattern="([А-ЯЁ][а-яё]+[\-\s]?){3,}"
+               title="Вы неверно ввели ФИО, повторите ввод в формате Иванов Иван Иванович"
+               required>
         <label class="form__label" for="form__tel">Ваш телефон</label>
-        <input class="form__input  form__tel" id="form__tel" type="tel" name="tel" placeholder="Телефон">
+        <input class="form__input  form__tel" id="form__tel" type="tel" name="tel"
+               placeholder="(+7)(XXX)XXX-XX-XX"
+               value="123-12-12"
+               pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+               title="Вы неверно ввели номер мобильного телефона, повторите ввод в формате (+7)(XXX)XXX-XX-XX">
         <label class="form__label" for="form__email">Ваш e-mail</label>
-        <input class="form__input  form__email" id="form__email" type="email" name="email" placeholder="E-mail">
+        <input class="form__input  form__email" id="form__email" type="email" name="email" placeholder="ivan@mail.ru">
+        <!--<template id="error">-->
+          <!--<div class="form__error">-->
+            <!--<p class="form__error-msg"></p>-->
+          <!--</div>-->
+        <!--</template>-->
         <label class="form__label" for="form__textarea">Ваше сообщение</label>
-        <textarea class="form__input  form__textarea" id="form__textarea" name="textarea" placeholder="Ваше сообщение" rows="4" required></textarea>
+        <textarea class="form__input  form__textarea" id="form__textarea" name="textarea"
+                  placeholder="Ваше сообщение"
+                  rows="4" required>Привет!</textarea>
         <input class="form__btn  btn" type="submit" value="Отправить">
       </form>
+      <template id="server-answer" style="display: none">
+        <div class="answer">
+          <button class="modal-content__close" id="answer-close" type="button" title="Закрыть">Закрыть</button>
+          <p class="answer__msg"></p>
+        </div>
+      </template>
     </div>
     <div class="modal-overlay"></div>
     </div>

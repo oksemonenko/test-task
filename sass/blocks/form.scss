@@ -1,6 +1,10 @@
 .form {
   margin-top: 30px;
   margin-bottom: 10px;
+
+  &--sent {
+    display: none;
+  }
 }
 
 .form__label {
@@ -20,6 +24,10 @@
   border: 1px solid $color-text;
   outline: none;
 
+  &--error {
+    border-color: red;
+  }
+
   @media #{$mobile-width} {
     width: 190px;
   }
@@ -32,3 +40,9 @@
 .form__btn {
   margin-left: 0;
 }
+
+//.form__error-msg {
+//  width: 100%;
+//  margin-top: -5px;
+//  color: red;
+//}

@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "fields": [
+    {
+      "name": "email",
+      "error": "Введенный Вами e-mail не найден"
+    }
+  ]
+}
