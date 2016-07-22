@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Test Task</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arimo&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -208,11 +208,6 @@
                title="Вы неверно ввели номер мобильного телефона, повторите ввод в формате (+7)(XXX)XXX-XX-XX">
         <label class="form__label" for="form__email">Ваш e-mail</label>
         <input class="form__input  form__email" id="form__email" type="email" name="email" placeholder="ivan@mail.ru">
-        <!--<template id="error">-->
-          <!--<div class="form__error">-->
-            <!--<p class="form__error-msg"></p>-->
-          <!--</div>-->
-        <!--</template>-->
         <label class="form__label" for="form__textarea">Ваше сообщение</label>
         <textarea class="form__input  form__textarea" id="form__textarea" name="textarea"
                   placeholder="Ваше сообщение"
@@ -221,13 +216,14 @@
       </form>
       <template id="server-answer" style="display: none">
         <div class="answer">
-          <button class="modal-content__close" id="answer-close" type="button" title="Закрыть">Закрыть</button>
+          <button class="modal-content__close  modal-content__close--answer" id="answer-close" type="button" title="Закрыть">
+            Закрыть</button>
           <p class="answer__msg"></p>
         </div>
       </template>
     </div>
     <div class="modal-overlay"></div>
     </div>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

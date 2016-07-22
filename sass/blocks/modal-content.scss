@@ -48,6 +48,11 @@
     top: 10px;
     right: 10px;
   }
+
+  &--answer {
+    top: 7px;
+    right: 7px;
+  }
 }
 
 .modal-content__close::before,
@@ -64,6 +69,11 @@
   @media #{$mobile-width} {
     background-color: $color-black;
   }
+}
+
+.modal-content__close--answer::before,
+.modal-content__close--answer::after {
+  background-color: $color-black;
 }
 
 .modal-content__close::before {

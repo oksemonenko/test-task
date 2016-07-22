@@ -207,6 +207,7 @@
 		evt.preventDefault();
 		var formData = new FormData(document.forms.form);
 		var xhr = new XMLHttpRequest();
+		//Необходимо подставить url отправки формы, указан тестовый
 		xhr.open("POST", "https://echo.htmlacademy.ru/");
 
 		xhr.send(formData);
@@ -272,7 +273,8 @@
 			answerContainer.classList.add(".modal-content--failure");
 		};
 
-		xhr.open("GET", ERROR_1_DATA_URL);
+		//Подставляем один url из трех возможных для демонстрации работы: SUCCESS_DATA_URL, ERROR_1_DATA_URL, ERROR_2_DATA_URL,
+		xhr.open("GET", SUCCESS_DATA_URL);
 		xhr.send();
 	};
 
